@@ -58,6 +58,7 @@ The application allows users to browse food items, search and filter dishes, vie
 
 ```text
 TastyBite-Food-Ordering-App/
+
 │
 ├── public/
 │
@@ -94,10 +95,11 @@ TastyBite-Food-Ordering-App/
 ├── eslint.config.js
 ├── .gitignore
 └── README.md
+```
 
+## Application Flow
 
-Application Flow
-
+```text
 Login
   ↓
 Home Page
@@ -117,67 +119,86 @@ Order Summary
 Place Demo Order
   ↓
 Orders Page
+```
 
-Redux Toolkit
+## Redux Toolkit
 
 Redux Toolkit is used to manage the shopping cart.
 
 The cart state contains food items and their quantities.
 
-The cartSlice.js file contains reducers for:
+The `cartSlice.js` file contains reducers for:
 
-Adding items to the cart
-Increasing quantity
-Decreasing quantity
-Removing items
-Clearing the cart
+- Adding items to the cart
+- Increasing quantity
+- Decreasing quantity
+- Removing items
+- Clearing the cart
 
-The Redux store is configured in store.js.
+The Redux store is configured in `store.js`.
 
-React Router
+## React Router
 
 React Router is used for navigation between pages.
 
 Main routes include:
-/              → Login
-/home          → Home
-/food/:id      → Food Details
-/cart          → Shopping Cart
-/orders        → Orders
 
-useParams() is used to get the food ID from the URL.
+```text
+/             → Login
+/home         → Home
+/food/:id     → Food Details
+/cart         → Shopping Cart
+/orders       → Orders
+```
 
-useNavigate() is used for programmatic navigation.
+`useParams()` is used to get the food ID from the URL.
 
-Link and NavLink are used for navigation between pages.
+`useNavigate()` is used for programmatic navigation.
 
-Data Handling
+`Link` and `NavLink` are used for navigation between pages.
+
+## Data Handling
 
 Food items, categories, and restaurant information are stored as JavaScript arrays of objects in:
+
+```text
 src/data/foods.js
+```
 
-The application uses JavaScript methods such as map(), filter(), find(), and reduce() to display and process the data.
+The application uses JavaScript methods such as `map()`, `filter()`, `find()`, and `reduce()` to display and process the data.
 
-How to Run
-1. Clone the repository
+## How to Run
+
+### 1. Clone the repository
+
+```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
+```
 
-2. Open the project folder
+### 2. Open the project folder
+
+```bash
 cd TastyBite-Food-Ordering-App
+```
 
-3. Install dependencies
+### 3. Install dependencies
+
+```bash
 npm install
+```
 
-4. Start the development server
+### 4. Start the development server
+
+```bash
 npm run dev
+```
 
 Open the local URL shown in the terminal.
 
-Note
+## Note
 
 This is a frontend demo application. Login and order placement are implemented for demonstration purposes. Orders are not stored in a backend database.
 
-Author
+## Author
 
 Prithu H S
-```
