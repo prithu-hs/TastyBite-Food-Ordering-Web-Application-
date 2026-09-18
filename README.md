@@ -57,40 +57,58 @@ The application allows users to browse food items, search and filter dishes, vie
 ## Project Structure
 
 ```text
-TastyBite-Food-Ordering-App/
-
+TastyBite-Food-Ordering-Web-Application-/
 │
 ├── public/
 │
 ├── src/
+│   │
 │   ├── assets/
 │   │
 │   ├── components/
+│   │   ├── CategoryFilter.css
+│   │   ├── CategoryFilter.jsx
+│   │   ├── FoodCard.css
 │   │   ├── FoodCard.jsx
+│   │   ├── Footer.css
 │   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   └── RestaurantCard.jsx
+│   │   ├── Navbar.css
+│   │   ├── Navbar.jsx
+│   │   ├── RestaurantCard.css
+│   │   ├── RestaurantCard.jsx
+│   │   ├── SearchBar.css
+│   │   └── SearchBar.jsx
 │   │
 │   ├── data/
-│   │   └── foods.js
+│   │   ├── foodData.js
+│   │   └── restaurantData.js
 │   │
 │   ├── pages/
+│   │   ├── Cart.css
 │   │   ├── Cart.jsx
+│   │   ├── Checkout.css
+│   │   ├── Checkout.jsx
+│   │   ├── FoodDetails.css
 │   │   ├── FoodDetails.jsx
+│   │   ├── Home.css
 │   │   ├── Home.jsx
+│   │   ├── Login.css
 │   │   ├── Login.jsx
-│   │   └── Orders.jsx
+│   │   ├── OrderConfirmation.css
+│   │   └── OrderConfirmation.jsx
 │   │
-│   ├── store/
+│   ├── redux/
 │   │   ├── cartSlice.js
 │   │   └── store.js
 │   │
+│   ├── App.css
 │   ├── App.jsx
-│   ├── main.jsx
-│   └── styles.css
+│   ├── index.css
+│   └── main.jsx
 │
 ├── index.html
 ├── package.json
+├── package-lock.json
 ├── vite.config.js
 ├── eslint.config.js
 ├── .gitignore
@@ -114,11 +132,13 @@ Add to Cart
   ↓
 Shopping Cart
   ↓
+Checkout
+  ↓
 Order Summary
   ↓
 Place Demo Order
   ↓
-Orders Page
+Order Confirmation
 ```
 
 ## Redux Toolkit
@@ -144,11 +164,12 @@ React Router is used for navigation between pages.
 Main routes include:
 
 ```text
-/             → Login
-/home         → Home
-/food/:id     → Food Details
-/cart         → Shopping Cart
-/orders       → Orders
+/                    → Login
+/home                → Home
+/food/:id            → Food Details
+/cart                → Shopping Cart
+/checkout            → Checkout
+/order-confirmation  → Order Confirmation
 ```
 
 `useParams()` is used to get the food ID from the URL.
@@ -159,11 +180,10 @@ Main routes include:
 
 ## Data Handling
 
-Food items, categories, and restaurant information are stored as JavaScript arrays of objects in:
+Food items and restaurant information are stored as JavaScript arrays of objects in:
 
-```text
-src/data/foods.js
-```
+- `src/data/foodData.js`
+- `src/data/restaurantData.js`
 
 The application uses JavaScript methods such as `map()`, `filter()`, `find()`, and `reduce()` to display and process the data.
 
@@ -178,7 +198,7 @@ git clone YOUR_GITHUB_REPOSITORY_URL
 ### 2. Open the project folder
 
 ```bash
-cd TastyBite-Food-Ordering-App
+cd TastyBite-Food-Ordering-Web-Application-
 ```
 
 ### 3. Install dependencies
