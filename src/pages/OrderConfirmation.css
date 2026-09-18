@@ -1,0 +1,59 @@
+.confirmation-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.confirmation-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.confirmation-card p {
+  color: #666666;
+  line-height: 1.5;
+}
+
+.order-id-box {
+  margin: 20px 0;
+  background-color: #f4f9f6;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.order-id-box span {
+  display: block;
+  font-size: 12px;
+  color: #888888;
+}
+
+.order-id-box strong {
+  font-size: 18px;
+  color: #1f8a4c;
+}
+
+.home-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1f8a4c;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #176b3a;
+}

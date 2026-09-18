@@ -1,0 +1,30 @@
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.category-button {
+  border: 1px solid #d8d8d8;
+  background-color: #ffffff;
+  color: #444444;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.category-button:hover {
+  border-color: #1f8a4c;
+  color: #1f8a4c;
+}
+
+.category-button.active {
+  background-color: #1f8a4c;
+  border-color: #1f8a4c;
+  color: #ffffff;
+}
