@@ -192,7 +192,7 @@ The application uses JavaScript methods such as `map()`, `filter()`, `find()`, a
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/prithu-hs/TastyBite-Food-Ordering-Web-Application-.git
 ```
 
 ### 2. Open the project folder
